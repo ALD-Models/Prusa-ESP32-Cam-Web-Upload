@@ -1,12 +1,14 @@
 {
-    "name": "Prusa Ca,",
+    "name": "Prusa Cam",
     "version": "28.05.2024",
     "new_install_prompt_erase": true,
     "builds": [
       {
         "chipFamily": "ESP32",
         "parts": [
-          { "path": "ESP32_PrusaConnectCam.ino.bootloader.bin", "offset": 1000 }
+          { "path": "ESP32_PrusaConnectCam.ino.bootloader.bin", "offset": 1000 },
+          { "path": "ESP32_PrusaConnectCam.ino.partitions.bin", "offset": 8000 },
+          { "path": "ESP32_PrusaConnectCam.ino.bin", "offset": 10000 }
         ]
       }
     ]
