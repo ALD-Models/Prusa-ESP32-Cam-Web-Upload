@@ -5,10 +5,15 @@
     "builds": [
         {
             "chipFamily": "ESP32",
+            "settings": {
+                "spi_speed": 80,
+                "spi_mode": "dio",
+                "baud_rate": 460800
+            },
             "parts": [
-                { "path": "ESP32_PrusaConnectCam.ino.bootloader.bin", "offset": 0x1000 },
-                { "path": "ESP32_PrusaConnectCam.ino.partitions.bin", "offset": 0x8000 },
-                { "path": "ESP32_PrusaConnectCam.ino.bin", "offset": 0x10000 }
+                { "path": "ESP32_PrusaConnectCam.ino.bootloader.bin", "offset": 4096 },
+                { "path": "ESP32_PrusaConnectCam.ino.partitions.bin", "offset": 32768 },
+                { "path": "ESP32_PrusaConnectCam.ino.bin", "offset": 65536 }
             ]
         }
     ]
