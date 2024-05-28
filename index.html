@@ -19,7 +19,7 @@
 
         :root {
             /* Colors */
-            --esp-tools-button-color: #25555C;
+            --esp-tools-button-color: #ff7b15;
         }
 
         #container {
@@ -32,6 +32,9 @@
         #rounded-box-container {
             display: flex;
             justify-content: center;
+            width: 90%; /* Adjust the width as needed */
+            max-width: 600px; /* Limit the maximum width */
+            margin: auto;
         }
 
         #rounded-box {
@@ -41,6 +44,7 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
             position: relative;
             z-index: 1;
+            width: 100%;
         }
 
         h1 {
@@ -65,7 +69,7 @@
         .button {
             display: inline-block;
             border: none;
-            background-color: #25555C;
+            background-color: var(--esp-tools-button-color);
             color: #FFFFFF;
             text-align: center;
             font-size: 15px;
@@ -105,13 +109,22 @@
 
         .powered-by {
             font-size: 12px;
-            color: #25555C; /* Set text color to button color */
+            color: var(--esp-tools-button-color); /* Set text color to button color */
             cursor: pointer;
             text-decoration: underline;
             margin-top: 20px; /* Add margin to the top */
+            display: inline-block; /* Display as inline block */
+            padding: 5px; /* Add padding */
+            border-radius: 4px; /* Add border-radius */
+            transition: color 0.5s; /* Add transition effect for color change */
+        }
+
+        .powered-by:hover {
+            color: #ffb874; /* Change text color on hover to a lighter shade of orange */
         }
     </style>
 </head>
+
 <body>
     
     <div id="container">
@@ -120,7 +133,7 @@
                 <div id="logo">
                     <img src="logo.png" alt="Logo"> <!-- Update the logo source here -->
                 </div>
-                <h1>Firmware Updater</h1>
+                <h1>Prusa Cam Installer</h1>
                 <div id="main">
                     <script type="module" src="https://unpkg.com/esp-web-tools@7.3.1/dist/web/install-button.js?module"></script>
                     <esp-web-install-button id="installButton" manifest="webflash/manifest.json"></esp-web-install-button>
