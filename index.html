@@ -2,10 +2,7 @@
 <html>
 
 <head>
-    <title>Firmware Updater</title>
-    <meta name="description" content="ALD Models Firmware Updater">
-    <meta name="keywords" content="wifi remote control, radio control, railway, narrow gauge, SM32, 16mm, G scale, garden railway, ALD Models, Firmware Update">
-    <meta name="abstract" content="Updater for ALD Models Electronic Products">
+    <title>Prusa Cam</title>
     <meta property="og:type" content="website" />
     <link rel="shortcut icon" type="image/x.icon" href="favicon.ico?">
     <style>
@@ -30,13 +27,6 @@
             height: 100vh;
         }
         
-        #uiCopyright {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
-            font-size: 14px;
-            color: #666;
-        }
 
         #rounded-box-container {
             display: flex;
@@ -150,25 +140,18 @@
 </head>
 <body>
     
- <div id="uiCopyright">
-        &copy; <span id="copyrightYear"></span> Jake Lofthouse ALD Models |
-        <a href="https://www.aldmodels.co.uk" target="_blank">www.aldmodels.co.uk</a>
-    </div>
-    
     <div id="container">
         <div id="rounded-box-container">
             <div id="rounded-box">
                 <div id="logo">
                     <img src="https://img1.wsimg.com/isteam/ip/bbde3b1b-93a1-4e79-ba26-9f4d2c23fffb/ALD%20Models%20Logo%202020.jpg"
-                        alt="ALD Models Logo">
+                        alt="Prusa Logo">
                 </div>
                 <h1>Firmware Updater</h1>
                 <div id="main">
                     <script type="module" src="https://unpkg.com/esp-web-tools@7.3.1/dist/web/install-button.js?module"></script>
                     <esp-web-install-button id="installButton" manifest="webflash/manifest.json"></esp-web-install-button>
                     <br>
-                    <br>
-                    <a class="button" style="vertical-align: middle" href="http://www.aldmodels.co.uk"><span>Visit our website</span></a>
                     <br>
                     <span id="noteSpan">NOTE: Make sure to close anything using your device's com port (e.g. Serial
                         monitor)</span>
@@ -179,19 +162,6 @@
     </div>
        
     <script>
-        // Function to get the current year
-        function getCurrentYear() {
-            return new Date().getFullYear();
-        }
-
-        // Function to update the copyright year
-        function updateCopyrightYear() {
-            document.getElementById('copyrightYear').textContent = getCurrentYear();
-        }
-
-        // Call the function to update the copyright year
-        updateCopyrightYear();
-        
         if ("serial" in navigator) {
             document.getElementById("notSupported").style.display = 'none';
             document.getElementById("main").style.display = 'block';
