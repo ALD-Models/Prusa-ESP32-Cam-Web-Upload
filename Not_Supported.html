@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Not Supported</title>
+    <link rel="shortcut icon" type="image/x.icon" href="favicon.ico?">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #161819ff;
+            overflow: hidden;
+            background: url('background.jpg') no-repeat center center fixed; /* Fixed background image */
+            background-size: cover;
+        }
+
+        #container {
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: auto;
+            text-align: center;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+
+
+        #o {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+
+
+        h1 {
+            color: #e74c3c;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        img {
+            max-width: 18%; /* Make the image responsive */
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <img src="Sad Face.png" alt="Sad Face">
+        <h1>Sorry, Your Device Isn't Supported</h1>
+        <p>Apologies for any inconvenience caused. It appears that your current device is not supported. Kindly attempt to access this website using a supported device, such as a laptop or PC. Thank you for your understanding.</p>
+    </div>
+
+
+</html>
