@@ -13,6 +13,8 @@
             padding: 0;
             background-color: #161819ff;
             overflow: hidden;
+            background: url('background.jpg') no-repeat center center fixed; /* Fixed background image */
+            background-size: cover;
         }
 
         :root {
@@ -26,7 +28,6 @@
             align-items: center;
             height: 100vh;
         }
-        
 
         #rounded-box-container {
             display: flex;
@@ -59,33 +60,6 @@
             max-width: 15%;
             height: auto;
             border-radius: 20px;
-        }
-
-        /* Background Animation */
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, #ff0080, #8000ff);
-            background-size: 200% 200%;
-            animation: gradient 5s linear infinite;
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
         }
 
         .button {
@@ -144,8 +118,7 @@
         <div id="rounded-box-container">
             <div id="rounded-box">
                 <div id="logo">
-                    <img src="https://img1.wsimg.com/isteam/ip/bbde3b1b-93a1-4e79-ba26-9f4d2c23fffb/ALD%20Models%20Logo%202020.jpg"
-                        alt="Prusa Logo">
+                    <img src="logo.png" alt="Logo"> <!-- Update the logo source here -->
                 </div>
                 <h1>Firmware Updater</h1>
                 <div id="main">
@@ -153,8 +126,7 @@
                     <esp-web-install-button id="installButton" manifest="webflash/manifest.json"></esp-web-install-button>
                     <br>
                     <br>
-                    <span id="noteSpan">NOTE: Make sure to close anything using your device's com port (e.g. Serial
-                        monitor)</span>
+                    <span id="noteSpan">NOTE: Make sure to close anything using your device's com port (e.g. Serial monitor)</span>
                 </div>
                 <div class="powered-by" onclick="window.open('https://esphome.github.io/esp-web-tools/', '_blank')">Powered by ESP Web Tools</div>
             </div>
