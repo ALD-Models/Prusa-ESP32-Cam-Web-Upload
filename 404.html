@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Firmware Updater</title>
+    <link rel="shortcut icon" type="image/x.icon" href="favicon.ico?">
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #161819ff;
+            overflow: hidden;
+            background: url('background.jpg') no-repeat center center fixed; /* Fixed background image */
+            background-size: cover;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #rounded-box-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        #rounded-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #main {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="rounded-box-container">
+            <div id="rounded-box">
+                <h1>Redirecting</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // You can add any redirect logic here if needed
+        setTimeout(function () {
+            window.location.href = 'https://ald-models.github.io/Prusa-ESP32-Cam-Web-Upload';
+        }, 2500); // Redirect after 3 seconds
+    </script>
+</body>
+
+</html>
