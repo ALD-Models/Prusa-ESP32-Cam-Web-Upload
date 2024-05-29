@@ -13,11 +13,12 @@
             padding: 0;
             background-color: #161819ff;
             overflow: hidden;
-            background: url('background.jpg') no-repeat center center fixed;
+            background: url('background.jpg') no-repeat center center fixed; /* Fixed background image */
             background-size: cover;
         }
 
         :root {
+            /* Colors */
             --esp-tools-button-color: #ff7b15;
         }
 
@@ -31,8 +32,8 @@
         #rounded-box-container {
             display: flex;
             justify-content: center;
-            width: 90%;
-            max-width: 600px;
+            width: 90%; /* Adjust the width as needed */
+            max-width: 600px; /* Limit the maximum width */
             margin: auto;
         }
 
@@ -47,7 +48,7 @@
         }
 
         h1 {
-            color: #333;
+            color: #333; /* Set text color back to the original color */
             margin-bottom: 20px;
         }
 
@@ -60,67 +61,70 @@
         }
 
         #logo img {
-            max-width: 20%;
+            max-width: 20%; /* Make the logo slightly larger */
             height: auto;
+            /* Remove border-radius */
         }
+        
+    /* Loading overlay styles */
+    .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff; /* Set the loading overlay to solid white */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999; /* Ensure the loading overlay is on top of everything */
+    }
 
-        .loading-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
+    .progress-container {
+        width: 200px;
+        height: 20px;
+        border: 1px solid #ff7b15;
+        position: relative;
+        overflow: hidden;
+        background-color: #ff7b15; /* Set progress bar color to black */
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
 
-        .progress-container {
-            width: 200px;
-            height: 20px;
-            border: 1px solid #ff7b15;
-            position: relative;
-            overflow: hidden;
-            background-color: #ff7b15;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-
-        .progress-bar {
-            width: 100%;
-            height: 100%;
-            background-color: #fff;
-            position: absolute;
-            top: 0;
-            left: -100%;
-            animation: progress-animation 2s linear infinite;
-        }
-
-        ewt-install-dialog, ewt-no-port-picked-dialog {
+    .progress-bar {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        animation: progress-animation 2s linear infinite;
+    }
+    
+    ewt-install-dialog, ewt-no-port-picked-dialog {
             --mdc-theme-primary: #ff7b15;
             --esp-tools-button-color: #ff7b15;
             --esp-tools-button-text-color: #ff7b15;
             --mdc-text-field-fill-color: #ff7b15;
         }
 
-        @keyframes progress-animation {
-            0% {
-                left: -100%;
-            }
-            100% {
-                left: 100%;
-            }
-        }
 
-        .loading-text {
-            font-size: 24px;
-            color: #ff7b15;
-            font-family: 'Arial', sans-serif;
-            margin-bottom: 10px;
+    @keyframes progress-animation {
+        0% {
+            left: -100%;
         }
+        100% {
+            left: 100%;
+        }
+    }
+
+    .loading-text {
+        font-size: 24px;
+        color: #ff7b15;
+        font-family: 'Arial', sans-serif; /* Set font to 'Arial', sans-serif */
+        margin-bottom: 10px;
+    }
 
         .button {
             display: inline-block;
@@ -165,87 +169,78 @@
 
         .powered-by {
             font-size: 12px;
-            color: var(--esp-tools-button-color);
+            color: var(--esp-tools-button-color); /* Set text color to button color */
             cursor: pointer;
             text-decoration: underline;
-            margin-top: 20px;
-            display: inline-block;
-            padding: 5px;
-            transition: color 0.5s;
+            margin-top: 20px; /* Add margin to the top */
+            display: inline-block; /* Display as inline block */
+            padding: 5px; /* Add padding */
+            /* Remove border-radius */
+            transition: color 0.5s; /* Add transition effect for color change */
         }
 
         .powered-by:hover {
-            color: #ffb874;
+            color: #ffb874; /* Change text color on hover to a lighter shade of orange */
         }
     </style>
 </head>
 
 <body>
+    
+    <!-- Loading overlay -->
     <div class="loading-overlay">
         <div class="loading-text">Loading</div>
         <div class="progress-container">
             <div class="progress-bar"></div>
         </div>
     </div>
-
+    
     <div id="container">
         <div id="rounded-box-container">
             <div id="rounded-box">
                 <div id="logo">
-                    <img src="logo.png" alt="Logo">
+                    <img src="logo.png" alt="Logo"> <!-- Update the logo source here -->
                 </div>
                 <h1>Prusa Cam Installer</h1>
                 <div id="main">
                     <script type="module" src="https://unpkg.com/esp-web-tools@7.3.1/dist/web/install-button.js?module"></script>
                     <esp-web-install-button id="installButton" manifest="webflash/manifest.json"></esp-web-install-button>
-                    <br><br>
+                    <br>
+                    <br>
                     <span id="noteSpan">NOTE: Make sure to close anything using your device's com port (e.g. Serial monitor)</span>
-                    <br><br>
-                    <div id="version">Version: <span id="versionCode"></span></div>
                 </div>
                 <div class="powered-by" onclick="window.open('https://esphome.github.io/esp-web-tools/', '_blank')">Powered by ESP Web Tools</div>
             </div>
         </div>
     </div>
-
+       
     <script>
-  async function fetchVersion() {
-            try {
-                const response = await fetch('https://raw.githubusercontent.com/ALD-Models/Prusa-ESP32-Cam-Web-Upload/main/version');
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const version = await response.text();
-                document.getElementById('versionCode').innerText = version.trim();
-            } catch (error) {
-                console.error('Error fetching version:', error);
-                document.getElementById('versionCode').innerText = 'Error loading version';
-            }
-        }
-
         if ("serial" in navigator) {
             document.getElementById("notSupported").style.display = 'none';
             document.getElementById("main").style.display = 'block';
-            fetchVersion();
         } else {
             window.location.href = "https://ald-models.github.io/Prusa-ESP32-Cam-Web-Upload/Not_Supported";
         }
+        
+    </script>
+    
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JLofthouse" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5VTXMS502E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5VTXMS502E');
+
+// Hide the loading overlay when the page is fully loaded
         window.addEventListener('load', function() {
             var loadingOverlay = document.querySelector('.loading-overlay');
             loadingOverlay.style.display = 'none';
         });
-    </script>
-
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JLofthouse" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VTXMS502E"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-5VTXMS502E');
-    </script>
+</script>
 </body>
 
 </html>
