@@ -5,6 +5,7 @@
     "builds": [
         {
             "chipFamily": "ESP32",
+            "improv": true,
             "parts": [
                 { "path": "ESP32_PrusaConnectCam.ino.bootloader.bin", "offset": 4096 },
                 { "path": "ESP32_PrusaConnectCam.ino.partitions.bin", "offset": 32768 },
