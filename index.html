@@ -211,7 +211,7 @@
     <script>
   async function fetchVersion() {
             try {
-                const response = await fetch('https://raw.githubusercontent.com/ALD-Models/Prusa-ESP32-Cam-Web-Upload/main/version.txt');
+                const response = await fetch('https://raw.githubusercontent.com/ALD-Models/Prusa-ESP32-Cam-Web-Upload/main/version');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
