@@ -13,6 +13,10 @@ Plug your ESP32 Cam into a USB port on your computer or laptop. Then visit: [htt
 5. Allow time for the upload to ESP32.
 6. You're done!
 
+# Security
+
+We utilize the official release from the Prusa development page, which remains unaltered. Currently, I am in the process of establishing a link with the Prusa CAM GitHub release.
+
 # Support Development of This Project?
 
 <a href="https://www.buymeacoffee.com/jlofthouse"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=jlofthouse&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff" /></a>
