@@ -1,6 +1,6 @@
 {
     "name": "Prusa Cam",
-    "version": "l1.0.3 Firmware for ESP32-cam",  // This should be replaced with the actual version tag
+    "version": "l1.0.3 Firmware for ESP32-cam",  
     "new_install_prompt_erase": true,
     "builds": [
         {
