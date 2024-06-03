@@ -4,6 +4,7 @@
 <head>
     <title>Prusa Cam Installer</title>
     <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="shortcut icon" type="image/x.icon" href="favicon.ico?">
     <style>
         body {
@@ -182,10 +183,43 @@
         .powered-by:hover {
             color: #ffb874; /* Change text color on hover to a lighter shade of orange */
         }
+        
+          .help-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 999; /* Ensure it's above other content */
+            background-color: #ff7b15; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 50%; /* Make it round */
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+            transition: transform 0.3s ease; /* Add smooth animation */
+        }
+
+        /* Change button style on hover */
+        .help-button:hover {
+            transform: scale(1.1); /* Scale it up */
+        }
+
+        /* Add styles for button icon */
+        .help-button i {
+            position: relative;
+            top: 2px;
+        }
     </style>
 </head>
 
 <body>
+    
+    <!-- Help button with icon -->
+    <button class="help-button" onclick="window.location.href='https://github.com/ALD-Models/Prusa-ESP32-Cam-Web-Upload/blob/main/README.md'">
+        <i class="fas fa-question"></i> <!-- Font Awesome help icon -->
+    </button>
     
     <!-- Loading overlay -->
     <div class="loading-overlay">
