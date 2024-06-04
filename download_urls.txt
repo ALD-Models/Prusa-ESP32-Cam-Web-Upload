@@ -1,0 +1,2 @@
+https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.0.3/ESP32_PrusaConnectCam.ino.bootloader.bin
+https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.0.3/ESP32_PrusaConnectCam.ino.partitions.bin
