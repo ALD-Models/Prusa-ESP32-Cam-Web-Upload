@@ -1,16 +1,25 @@
 {
-    "name": "Prusa Cam",
-    "version": "1.0.3", 
-    "new_install_prompt_erase": false,
-    "builds": [
+  "name": "Prusa Cam",
+  "version": "v1.0.3",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "improv": true,
+      "parts": [
         {
-            "chipFamily": "ESP32",
-            "improv": true,
-            "parts": [
-                { "path": "ESP32_PrusaConnectCam.ino.bootloader.bin", "offset": 4096 },
-                { "path": "ESP32_PrusaConnectCam.ino.partitions.bin", "offset": 32768 },
-                { "path": "ESP32_PrusaConnectCam.ino.bin", "offset": 65536 }
-            ]
+          "path": "ESP32_PrusaConnectCam.ino.bootloader.bin",
+          "offset": 4096
+        },
+        {
+          "path": "ESP32_PrusaConnectCam.ino.partitions.bin",
+          "offset": 32768
+        },
+        {
+          "path": "ESP32_PrusaConnectCam.ino.bin",
+          "offset": 65536
         }
-    ]
+      ]
+    }
+  ]
 }
