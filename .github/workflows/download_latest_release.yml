@@ -46,10 +46,13 @@ jobs:
             .builds[0].parts[2].path = "ESP32_PrusaConnectCam.ino.bin"
           ' "$manifest_file" > tmp_manifest.json && mv tmp_manifest.json "$manifest_file"
 
+      - name: Stage changes
+        run: |
+          git add webflash/ latest_release.json download_urls.txt
+
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add webflash/
           git commit -m "Update manifest.json to version $release_tag"
           git push
