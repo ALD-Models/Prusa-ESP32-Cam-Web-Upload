@@ -1,6 +1,6 @@
 {
     "name": "Prusa Cam",
-    "version": "1.0.3",  // This will be updated automatically by the workflow
+    "version": "1.0.3", 
     "new_install_prompt_erase": false,
     "builds": [
         {
