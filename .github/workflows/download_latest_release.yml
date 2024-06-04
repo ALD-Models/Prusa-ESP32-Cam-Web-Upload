@@ -40,7 +40,7 @@ jobs:
             .builds[0].parts[0].path = "ESP32_PrusaConnectCam.ino.bootloader.bin" |
             .builds[0].parts[1].path = "ESP32_PrusaConnectCam.ino.partitions.bin" |
             .builds[0].parts[2].path = "ESP32_PrusaConnectCam.ino.bin"
-          ' $manifest_file > tmp_manifest.json && mv tmp_manifest.json $manifest_file
+          ' "$manifest_file" > tmp_manifest.json && mv tmp_manifest.json "$manifest_file"
 
       - name: Replace binary files
         run: |
