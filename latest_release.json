@@ -62,7 +62,7 @@
       "content_type": "application/octet-stream",
       "state": "uploaded",
       "size": 1467280,
-      "download_count": 159,
+      "download_count": 173,
       "created_at": "2024-06-02T19:24:20Z",
       "updated_at": "2024-06-02T19:24:21Z",
       "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.0.3/ESP32_PrusaConnectCam.ino.bin"
@@ -96,7 +96,7 @@
       "content_type": "application/octet-stream",
       "state": "uploaded",
       "size": 17568,
-      "download_count": 76,
+      "download_count": 83,
       "created_at": "2024-06-02T19:24:24Z",
       "updated_at": "2024-06-02T19:24:24Z",
       "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.0.3/ESP32_PrusaConnectCam.ino.bootloader.bin"
@@ -130,7 +130,7 @@
       "content_type": "application/octet-stream",
       "state": "uploaded",
       "size": 3072,
-      "download_count": 73,
+      "download_count": 80,
       "created_at": "2024-06-02T19:24:26Z",
       "updated_at": "2024-06-02T19:24:27Z",
       "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.0.3/ESP32_PrusaConnectCam.ino.partitions.bin"
