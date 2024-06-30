@@ -1,6 +1,6 @@
 {
   "name": "Prusa Cam",
-  "version": "v1.0.3",
+  "version": "v1.1.0-rc1",
   "new_install_prompt_erase": false,
   "builds": [
     {

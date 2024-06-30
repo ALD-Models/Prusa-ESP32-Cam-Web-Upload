@@ -1,2 +1,3 @@
-https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.0.3/ESP32_PrusaConnectCam.ino.bootloader.bin
-https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.0.3/ESP32_PrusaConnectCam.ino.partitions.bin
+https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0-rc1/esp32-cam.zip
+https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0-rc1/esp32-s3-eye-22.zip
+https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0-rc1/esp32-wrover-dev.zip
