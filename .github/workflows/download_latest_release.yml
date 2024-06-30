@@ -22,18 +22,27 @@ jobs:
       - name: Extract download URLs
         id: extract_urls
         run: |
-          download_urls=$(jq -r '.assets[] | select(.name | test("ESP32_PrusaConnectCam.ino.(bootloader|partitions|bin).bin")) | .browser_download_url' latest_release.json)
+          download_urls=$(jq -r '.assets[] | select(.name | startswith("esp32")) | .browser_download_url' latest_release.json)
           echo "$download_urls" > download_urls.txt
 
-      - name: Download binary files
+      - name: Create webflash directory
+        run: mkdir -p webflash
+
+      - name: Download ZIP files
         run: |
           while IFS= read -r url; do
-            wget "$url"
+            wget -P webflash "$url"
           done < download_urls.txt
 
-      - name: List files
+      - name: Extract ZIP files
         run: |
-          ls -l webflash/
+          for file in webflash/*.zip; do
+            unzip -d "${file%*.zip}" "$file"
+            rm "$file"
+          done
+
+      - name: List files
+        run: ls -l webflash/
 
       - name: Update manifest.json
         run: |
@@ -47,8 +56,7 @@ jobs:
           ' "$manifest_file" > tmp_manifest.json && mv tmp_manifest.json "$manifest_file"
 
       - name: Stage changes
-        run: |
-          git add webflash/ latest_release.json download_urls.txt
+        run: git add webflash/ latest_release.json download_urls.txt
 
       - name: Commit and push changes
         run: |
