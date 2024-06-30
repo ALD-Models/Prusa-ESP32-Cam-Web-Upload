@@ -9,9 +9,8 @@ Plug your ESP32 Cam into a USB port on your computer or laptop. Then visit: [htt
 1. Select "Connect."
 2. Choose the COM port that your ESP is connected to.
 3. Press "Install Prusa Cam."
-4. Press "Erase Device" to clear all saved memory (EEPROM).
-5. Allow time for the upload to ESP32.
-6. You're done!
+4. Allow time for the upload to ESP32.
+5. You're done!
 
 # Security
 
