@@ -2,6 +2,8 @@
 
 ![GitHub Actions](https://github.com/ALD-Models/Prusa-ESP32-Cam-Web-Upload/actions/workflows/latest_firmware.yml/badge.svg)
 
+[![GitHub Actions](https://github.com/ALD-Models/Prusa-ESP32-Cam-Web-Upload/actions/workflows/latest_firmware.yml/badge.svg)](https://github.com/ALD-Models/Prusa-ESP32-Cam-Web-Upload/actions) 🔧
+
 # Getting Started
 
 I would highly recommend that you take a look at the official instructions provided [here](https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/tree/master?tab=readme-ov-file#esp32-cam-ai-thinker-board).
