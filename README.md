@@ -14,7 +14,7 @@ Plug your ESP32 Cam into a USB port on your computer or laptop. Then visit: [htt
 
 # Security
 
-We utilize the official release from the Prusa development page, which remains unaltered. Currently, I am in the process of establishing a link with the Prusa CAM GitHub release.
+We utilize the official release from the Prusa development page, which remains unaltered. The firmware is automatically copied from the [Official Prusa Cam](https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases) release page at midnight everyday!
 
 # Support Development of This Project?
 
