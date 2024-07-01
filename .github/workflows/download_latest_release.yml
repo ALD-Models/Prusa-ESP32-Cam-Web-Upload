@@ -36,10 +36,10 @@ jobs:
 
       - name: Extract ZIP files
         run: |
-for file in webflash/*.zip; do
-  unzip -o -d "${file%*.zip}" "$file"
-  rm "$file"
-done
+         for file in webflash/*.zip; do
+           unzip -o -d "${file%*.zip}" "$file"
+           rm "$file"
+             done
 
 
       - name: List files
