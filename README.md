@@ -1,6 +1,6 @@
 # System Status
 
-![GitHub Actions](https://github.com/ALD-Models/Prusa-ESP32-Cam-Web-Upload/actions/workflows/download_latest_release.yml/badge.svg)
+![GitHub Actions](https://github.com/ALD-Models/Prusa-ESP32-Cam-Web-Upload/actions/workflows/latest_firmware.yml/badge.svg)
 
 # Getting Started
 
