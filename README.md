@@ -1,3 +1,7 @@
+# System Status
+
+![GitHub Actions](https://github.com/ALD-Models/Prusa-ESP32-Cam-Web-Upload/actions/workflows/download_latest_release.yml/badge.svg)
+
 # Getting Started
 
 I would highly recommend that you take a look at the official instructions provided [here](https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/tree/master?tab=readme-ov-file#esp32-cam-ai-thinker-board).
