@@ -1,6 +1,11 @@
 name: Update Version Badge
 
 on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at midnight
+  workflow_dispatch:  # Allows manual triggering
+
+on:
   push:
     paths:
       - 'webflash/manifest.json'
