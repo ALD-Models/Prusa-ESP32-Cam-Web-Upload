@@ -1,0 +1,34 @@
+name: Update Version Badge
+
+on:
+  push:
+    paths:
+      - 'webflash/manifest.json'
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Extract version from manifest.json
+        id: get_version
+        run: |
+          VERSION=$(jq -r '.version' webflash/manifest.json)
+          echo "::set-output name=version::$VERSION"
+
+      - name: Update README with new badge
+        run: |
+          VERSION=${{ steps.get_version.outputs.version }}
+          BADGE_URL="https://img.shields.io/badge/version-${VERSION}-brightgreen.svg"
+          sed -i "s|!\[Firmware Version\](.*)|![Firmware Version](${BADGE_URL})|" README.md
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update firmware version badge to ${{ steps.get_version.outputs.version }}"
+          git push
