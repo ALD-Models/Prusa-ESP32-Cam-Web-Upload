@@ -2,13 +2,8 @@ name: Update Version Badge
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs every day at midnight
+    - cron: '0 0 * * *'  # This runs the workflow at midnight UTC every day
   workflow_dispatch:  # Allows manual triggering
-
-on:
-  push:
-    paths:
-      - 'webflash/manifest.json'
 
 jobs:
   update-badge:
