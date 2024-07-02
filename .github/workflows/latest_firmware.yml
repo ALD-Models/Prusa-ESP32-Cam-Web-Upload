@@ -1,34 +1,67 @@
-name: Update Version Badge
+name: Latest Firmware
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # This runs the workflow at midnight UTC every day
+    - cron: '0 0 * * *'  # Runs every day at midnight
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
-  update-badge:
+  download:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Extract version from manifest.json
-        id: get_version
+      - name: Fetch latest release information
+        id: fetch_latest_release
         run: |
-          VERSION=$(jq -r '.version' webflash/manifest.json)
-          echo "::set-output name=version::$VERSION"
+          latest_release=$(curl -s https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/latest)
+          echo "$latest_release" > latest_release.json
 
-      - name: Update README with new badge
+      - name: Extract download URLs
+        id: extract_urls
         run: |
-          VERSION=${{ steps.get_version.outputs.version }}
-          BADGE_URL="https://img.shields.io/badge/version-${VERSION}-brightgreen.svg"
-          sed -i "s|!\[Firmware Version\](.*)|![Firmware Version](${BADGE_URL})|" README.md
+          download_urls=$(jq -r '.assets[] | select(.name | startswith("esp32")) | .browser_download_url' latest_release.json)
+          echo "$download_urls" > download_urls.txt
 
-      - name: Commit changes
+      - name: Create webflash directory
+        run: mkdir -p webflash
+
+      - name: Download ZIP files
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "Update firmware version badge to ${{ steps.get_version.outputs.version }}"
+          while IFS= read -r url; do
+            wget -P webflash "$url"
+          done < download_urls.txt
+
+      - name: Extract ZIP files
+        run: |
+         for file in webflash/*.zip; do
+           unzip -o -d "${file%*.zip}" "$file"
+           rm "$file"
+             done
+
+
+      - name: List files
+        run: ls -l webflash/
+
+      - name: Update manifest.json
+        run: |
+          release_tag=$(jq -r '.tag_name' latest_release.json)
+          manifest_file="webflash/manifest.json"
+          jq --arg tag "$release_tag" '
+            .version = $tag |
+            .builds[0].parts[0].path = "ESP32_PrusaConnectCam.ino.bootloader.bin" |
+            .builds[0].parts[1].path = "ESP32_PrusaConnectCam.ino.partitions.bin" |
+            .builds[0].parts[2].path = "ESP32_PrusaConnectCam.ino.bin"
+          ' "$manifest_file" > tmp_manifest.json && mv tmp_manifest.json "$manifest_file"
+
+      - name: Stage changes
+        run: git add webflash/ latest_release.json download_urls.txt
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git commit -m "Update manifest.json to version $release_tag"
           git push
