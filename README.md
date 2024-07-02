@@ -1,6 +1,6 @@
 # System Status
 
-![Firmware Version](https://img.shields.io/badge/version-1.1.0-brightgreen.svg)
+![Firmware Version](https://img.shields.io/badge/Version-1.1.0-brightgreen.svg)
 
 ![GitHub Actions](https://github.com/ALD-Models/Prusa-ESP32-Cam-Web-Upload/actions/workflows/latest_firmware.yml/badge.svg)
 
