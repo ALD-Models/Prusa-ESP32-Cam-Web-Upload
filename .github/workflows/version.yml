@@ -22,7 +22,7 @@ jobs:
       - name: Update README with new badge
         run: |
           VERSION=${{ steps.get_version.outputs.version }}
-          BADGE_URL="https://img.shields.io/badge/version-${VERSION}-brightgreen.svg"
+          BADGE_URL="https://img.shields.io/badge/Version-${VERSION}-brightgreen.svg"
           sed -i "s|!\[Firmware Version\](.*)|![Firmware Version](${BADGE_URL})|" README.md
 
       - name: Commit changes
