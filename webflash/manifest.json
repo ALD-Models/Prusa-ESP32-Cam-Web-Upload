@@ -10,7 +10,7 @@
         "esp32-wrover-dev": {
           "parts": [
             {
-              "path": "webflash/esp32-wrover-dev/ESP32_PrusaConnectCam.ino.bootloader.bin",
+              "path": "esp32-wrover-dev/ESP32_PrusaConnectCam.ino.bootloader.bin",
               "offset": 4096
             },
             {
