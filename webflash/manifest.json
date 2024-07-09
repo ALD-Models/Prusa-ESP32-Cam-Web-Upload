@@ -5,6 +5,7 @@
   "builds": [
     {
       "chipFamily": "ESP32",
+      "improv": true,
       "devices": {
         "esp32-wrover-dev": {
           "parts": [
@@ -54,6 +55,7 @@
             }
           ]
         }
+      }
     }
   ]
 }
