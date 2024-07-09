@@ -26,7 +26,7 @@
         "esp32-s3-eye-22": {
           "parts": [
             {
-              "path": "webflash/esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bootloader.bin",
+              "path": "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bootloader.bin",
               "offset": 4096
             },
             {
@@ -42,7 +42,7 @@
         "default": {
           "parts": [
             {
-              "path": "webflash/esp32-cam/ESP32_PrusaConnectCam.ino.bootloader.bin",
+              "path": "esp32-cam/ESP32_PrusaConnectCam.ino.bootloader.bin",
               "offset": 4096
             },
             {
@@ -56,17 +56,6 @@
           ]
         }
       },
-      "parts": [
-        {
-          "path": "webflash/ESP32_PrusaConnectCam.ino.bootloader.bin"
-        },
-        {
-          "path": "ESP32_PrusaConnectCam.ino.partitions.bin"
-        },
-        {
-          "path": "ESP32_PrusaConnectCam.ino.bin"
-        }
-      ]
     }
   ]
 }
