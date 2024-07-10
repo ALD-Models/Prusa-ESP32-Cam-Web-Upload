@@ -55,7 +55,18 @@
             }
           ]
         }
-      }
+      },
+      "parts": [
+        {
+          "path": "ESP32_PrusaConnectCam.ino.bootloader.bin"
+        },
+        {
+          "path": "ESP32_PrusaConnectCam.ino.partitions.bin"
+        },
+        {
+          "path": "ESP32_PrusaConnectCam.ino.bin"
+        }
+      ]
     }
   ]
 }
