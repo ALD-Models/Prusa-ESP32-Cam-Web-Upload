@@ -50,18 +50,18 @@ jobs:
           manifest_file="webflash/manifest.json"
           jq --arg tag "$release_tag" '
             .version = $tag |
-            .builds[0].devices["esp32-wrover-dev"].parts[0].path = "esp32-wrover-dev/ESP32_PrusaConnectCam.ino.bootloader.bin" |
-            .builds[0].devices["esp32-wrover-dev"].parts[1].path = "esp32-wrover-dev/ESP32_PrusaConnectCam.ino.partitions.bin" |
-            .builds[0].devices["esp32-wrover-dev"].parts[2].path = "esp32-wrover-dev/ESP32_PrusaConnectCam.ino.bin" |
-            .builds[0].devices["esp32-s3-eye-22"].parts[0].path = "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bootloader.bin" |
-            .builds[0].devices["esp32-s3-eye-22"].parts[1].path = "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.partitions.bin" |
-            .builds[0].devices["esp32-s3-eye-22"].parts[2].path = "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bin" |
-            .builds[0].devices["default"].parts[0].path = "esp32-cam/ESP32_PrusaConnectCam.ino.bootloader.bin" |
-            .builds[0].devices["default"].parts[1].path = "esp32-cam/ESP32_PrusaConnectCam.ino.partitions.bin" |
-            .builds[0].devices["default"].parts[2].path = "esp32-cam/ESP32_PrusaConnectCam.ino.bin" |
-            .builds[0].parts[0].path = "ESP32_PrusaConnectCam.ino.bootloader.bin" |
-            .builds[0].parts[1].path = "ESP32_PrusaConnectCam.ino.partitions.bin" |
-            .builds[0].parts[2].path = "ESP32_PrusaConnectCam.ino.bin"
+            .builds[0].devices["esp32-wrover-dev"].parts[0].path = "webflash/esp32-wrover-dev/ESP32_PrusaConnectCam.ino.bootloader.bin" |
+            .builds[0].devices["esp32-wrover-dev"].parts[1].path = "webflash/esp32-wrover-dev/ESP32_PrusaConnectCam.ino.partitions.bin" |
+            .builds[0].devices["esp32-wrover-dev"].parts[2].path = "webflash/esp32-wrover-dev/ESP32_PrusaConnectCam.ino.bin" |
+            .builds[0].devices["esp32-s3-eye-22"].parts[0].path = "webflash/esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bootloader.bin" |
+            .builds[0].devices["esp32-s3-eye-22"].parts[1].path = "webflash/esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.partitions.bin" |
+            .builds[0].devices["esp32-s3-eye-22"].parts[2].path = "webflash/esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bin" |
+            .builds[0].devices["default"].parts[0].path = "webflash/esp32-cam/ESP32_PrusaConnectCam.ino.bootloader.bin" |
+            .builds[0].devices["default"].parts[1].path = "webflash/esp32-cam/ESP32_PrusaConnectCam.ino.partitions.bin" |
+            .builds[0].devices["default"].parts[2].path = "webflash/esp32-cam/ESP32_PrusaConnectCam.ino.bin" |
+            .builds[0].parts[0].path = "webflash/ESP32_PrusaConnectCam.ino.bootloader.bin" |
+            .builds[0].parts[1].path = "webflash/ESP32_PrusaConnectCam.ino.partitions.bin" |
+            .builds[0].parts[2].path = "webflash/ESP32_PrusaConnectCam.ino.bin"
           ' "$manifest_file" > tmp_manifest.json && mv tmp_manifest.json "$manifest_file"
 
       - name: Stage changes
