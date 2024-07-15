@@ -1,6 +1,6 @@
 {
   "name": "Prusa Cam",
-  "version": "v1.1.0-rc2",
+  "version": "v1.1.0-rc1",
   "new_install_prompt_erase": false,
   "builds": [
     {
@@ -55,18 +55,7 @@
             }
           ]
         }
-      },
-      "parts": [
-        {
-          "path": "ESP32_PrusaConnectCam.ino.bootloader.bin"
-        },
-        {
-          "path": "ESP32_PrusaConnectCam.ino.partitions.bin"
-        },
-        {
-          "path": "ESP32_PrusaConnectCam.ino.bin"
-        }
-      ]
+      }
     }
   ]
 }
