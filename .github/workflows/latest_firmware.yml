@@ -1,5 +1,9 @@
 name: Latest Firmware
 
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 jobs:
   download:
@@ -32,11 +36,10 @@ jobs:
 
       - name: Extract ZIP files
         run: |
-         for file in webflash/*.zip; do
-           unzip -o -d "${file%*.zip}" "$file"
-           rm "$file"
-             done
-
+          for file in webflash/*.zip; do
+            unzip -o -d "${file%*.zip}" "$file"
+            rm "$file"
+          done
 
       - name: List files
         run: ls -l webflash/
@@ -47,6 +50,15 @@ jobs:
           manifest_file="webflash/manifest.json"
           jq --arg tag "$release_tag" '
             .version = $tag |
+            .builds[0].devices["esp32-wrover-dev"].parts[0].path = "esp32-wrover-dev/ESP32_PrusaConnectCam.ino.bootloader.bin" |
+            .builds[0].devices["esp32-wrover-dev"].parts[1].path = "esp32-wrover-dev/ESP32_PrusaConnectCam.ino.partitions.bin" |
+            .builds[0].devices["esp32-wrover-dev"].parts[2].path = "esp32-wrover-dev/ESP32_PrusaConnectCam.ino.bin" |
+            .builds[0].devices["esp32-s3-eye-22"].parts[0].path = "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bootloader.bin" |
+            .builds[0].devices["esp32-s3-eye-22"].parts[1].path = "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.partitions.bin" |
+            .builds[0].devices["esp32-s3-eye-22"].parts[2].path = "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bin" |
+            .builds[0].devices["default"].parts[0].path = "esp32-cam/ESP32_PrusaConnectCam.ino.bootloader.bin" |
+            .builds[0].devices["default"].parts[1].path = "esp32-cam/ESP32_PrusaConnectCam.ino.partitions.bin" |
+            .builds[0].devices["default"].parts[2].path = "esp32-cam/ESP32_PrusaConnectCam.ino.bin" |
             .builds[0].parts[0].path = "ESP32_PrusaConnectCam.ino.bootloader.bin" |
             .builds[0].parts[1].path = "ESP32_PrusaConnectCam.ino.partitions.bin" |
             .builds[0].parts[2].path = "ESP32_PrusaConnectCam.ino.bin"
@@ -56,6 +68,8 @@ jobs:
         run: git add webflash/ latest_release.json download_urls.txt
 
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
