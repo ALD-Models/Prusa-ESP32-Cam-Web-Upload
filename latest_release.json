@@ -62,7 +62,7 @@
       "content_type": "application/x-zip-compressed",
       "state": "uploaded",
       "size": 973376,
-      "download_count": 50,
+      "download_count": 51,
       "created_at": "2024-07-12T21:43:46Z",
       "updated_at": "2024-07-12T21:43:47Z",
       "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0-rc2/esp32-cam.zip"
@@ -96,7 +96,7 @@
       "content_type": "application/octet-stream",
       "state": "uploaded",
       "size": 1539328,
-      "download_count": 12,
+      "download_count": 13,
       "created_at": "2024-07-12T21:43:40Z",
       "updated_at": "2024-07-12T21:43:41Z",
       "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0-rc2/esp32-s3-cam.bin"
@@ -130,7 +130,7 @@
       "content_type": "application/x-zip-compressed",
       "state": "uploaded",
       "size": 945011,
-      "download_count": 3,
+      "download_count": 4,
       "created_at": "2024-07-12T21:44:04Z",
       "updated_at": "2024-07-12T21:44:05Z",
       "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0-rc2/esp32-s3-cam.zip"
@@ -164,7 +164,7 @@
       "content_type": "application/x-zip-compressed",
       "state": "uploaded",
       "size": 942189,
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2024-07-12T21:43:56Z",
       "updated_at": "2024-07-12T21:43:56Z",
       "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0-rc2/esp32-s3-eye-22.zip"
@@ -198,7 +198,7 @@
       "content_type": "application/x-zip-compressed",
       "state": "uploaded",
       "size": 937039,
-      "download_count": 5,
+      "download_count": 6,
       "created_at": "2024-07-12T21:43:51Z",
       "updated_at": "2024-07-12T21:43:51Z",
       "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0-rc2/esp32-wrover-dev.zip"
