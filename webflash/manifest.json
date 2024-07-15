@@ -26,20 +26,19 @@
         "esp32-s3-cam": {
           "parts": [
             {
-              "path": "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bootloader.bin",
+              "path": "esp32-s3-cam/ESP32_PrusaConnectCam.ino.bootloader.bin",
               "offset": 4096
             },
             {
-              "path": "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.partitions.bin",
+              "path": "esp32-s3-cam/ESP32_PrusaConnectCam.ino.partitions.bin",
               "offset": 32768
             },
             {
-              "path": "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bin",
+              "path": "esp32-s3-cam/ESP32_PrusaConnectCam.ino.bin",
               "offset": 65536
             }
           ]
         },
-
         "esp32-s3-eye-22": {
           "parts": [
             {
@@ -56,24 +55,7 @@
             }
           ]
         },
-
-          "esp32-cam": {
-          "parts": [
-            {
-              "path": "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bootloader.bin",
-              "offset": 4096
-            },
-            {
-              "path": "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.partitions.bin",
-              "offset": 32768
-            },
-            {
-              "path": "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bin",
-              "offset": 65536
-            }
-          ]
-        },
-        "default": {
+        "esp32-cam": {
           "parts": [
             {
               "path": "esp32-cam/ESP32_PrusaConnectCam.ino.bootloader.bin",
@@ -85,6 +67,22 @@
             },
             {
               "path": "esp32-cam/ESP32_PrusaConnectCam.ino.bin",
+              "offset": 65536
+            }
+          ]
+        },
+        "default": {
+          "parts": [
+            {
+              "path": "default/ESP32_PrusaConnectCam.ino.bootloader.bin",
+              "offset": 4096
+            },
+            {
+              "path": "default/ESP32_PrusaConnectCam.ino.partitions.bin",
+              "offset": 32768
+            },
+            {
+              "path": "default/ESP32_PrusaConnectCam.ino.bin",
               "offset": 65536
             }
           ]
