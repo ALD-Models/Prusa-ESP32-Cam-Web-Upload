@@ -1,61 +1,25 @@
 {
   "name": "Prusa Cam",
-  "version": "v1.1.0-rc1",
+  "version": "v1.0.3",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32",
       "improv": true,
-      "devices": {
-        "esp32-wrover-dev": {
-          "parts": [
-            {
-              "path": "esp32-wrover-dev/ESP32_PrusaConnectCam.ino.bootloader.bin",
-              "offset": 4096
-            },
-            {
-              "path": "esp32-wrover-dev/ESP32_PrusaConnectCam.ino.partitions.bin",
-              "offset": 32768
-            },
-            {
-              "path": "esp32-wrover-dev/ESP32_PrusaConnectCam.ino.bin",
-              "offset": 65536
-            }
-          ]
+      "parts": [
+        {
+          "path": "ESP32_PrusaConnectCam.ino.bootloader.bin",
+          "offset": 4096
         },
-        "esp32-s3-eye-22": {
-          "parts": [
-            {
-              "path": "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bootloader.bin",
-              "offset": 4096
-            },
-            {
-              "path": "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.partitions.bin",
-              "offset": 32768
-            },
-            {
-              "path": "esp32-s3-eye-22/ESP32_PrusaConnectCam.ino.bin",
-              "offset": 65536
-            }
-          ]
+        {
+          "path": "ESP32_PrusaConnectCam.ino.partitions.bin",
+          "offset": 32768
         },
-        "default": {
-          "parts": [
-            {
-              "path": "esp32-cam/ESP32_PrusaConnectCam.ino.bootloader.bin",
-              "offset": 4096
-            },
-            {
-              "path": "esp32-cam/ESP32_PrusaConnectCam.ino.partitions.bin",
-              "offset": 32768
-            },
-            {
-              "path": "esp32-cam/ESP32_PrusaConnectCam.ino.bin",
-              "offset": 65536
-            }
-          ]
+        {
+          "path": "ESP32_PrusaConnectCam.ino.bin",
+          "offset": 65536
         }
-      }
+      ]
     }
   ]
 }
