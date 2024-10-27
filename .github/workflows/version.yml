@@ -1,8 +1,6 @@
 name: Update Version Badge
 
 on:
-  schedule:
-    - cron: '15 0 * * *'  # This runs the workflow at 12:15 AM UTC every day
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
