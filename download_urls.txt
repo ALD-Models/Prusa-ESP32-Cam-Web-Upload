@@ -1,5 +1,5 @@
-https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/esp32-cam.zip
-https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/esp32-s3-cam.bin
-https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/esp32-s3-cam.zip
-https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/esp32-s3-eye-22.zip
-https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/esp32-wrover-dev.zip
+https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/esp32-cam.zip
+https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/esp32-s3-cam.bin
+https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/esp32-s3-cam.zip
+https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/esp32-s3-eye-22.zip
+https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/esp32-wrover-dev.zip

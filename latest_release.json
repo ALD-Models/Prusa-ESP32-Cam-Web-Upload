@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/168774845",
-  "assets_url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/168774845/assets",
-  "upload_url": "https://uploads.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/168774845/assets{?name,label}",
-  "html_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/tag/v1.1.0",
-  "id": 168774845,
+  "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/187338716",
+  "assets_url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/187338716/assets",
+  "upload_url": "https://uploads.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/187338716/assets{?name,label}",
+  "html_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/tag/v1.1.1",
+  "id": 187338716,
   "author": {
     "login": "johnyHV",
     "id": 4459753,
@@ -22,21 +22,22 @@
     "events_url": "https://api.github.com/users/johnyHV/events{/privacy}",
     "received_events_url": "https://api.github.com/users/johnyHV/received_events",
     "type": "User",
+    "user_view_type": "public",
     "site_admin": false
   },
-  "node_id": "RE_kwDOLr1ZSM4KD0y9",
-  "tag_name": "v1.1.0",
+  "node_id": "RE_kwDOLr1ZSM4LKo_c",
+  "tag_name": "v1.1.1",
   "target_commitish": "master",
-  "name": "1.1.0 Firmware for Ai-Thinker ESP32-cam, ESP32-S3-EYE 2.2, Freenove ESP32-Wrover, XIAO ESP32-S3 Sense, ESP32-S3-CAM",
+  "name": "1.1.1 Firmware for Ai-Thinker ESP32-cam, ESP32-S3-EYE 2.2, Freenove ESP32-Wrover, XIAO ESP32-S3 Sense, ESP32-S3-CAM",
   "draft": false,
   "prerelease": false,
-  "created_at": "2024-08-05T16:25:26Z",
-  "published_at": "2024-08-05T19:29:49Z",
+  "created_at": "2024-11-26T20:58:37Z",
+  "published_at": "2024-11-26T21:34:00Z",
   "assets": [
     {
-      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/184053193",
-      "id": 184053193,
-      "node_id": "RA_kwDOLr1ZSM4K-G3J",
+      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/209263773",
+      "id": 209263773,
+      "node_id": "RA_kwDOLr1ZSM4MeRyd",
       "name": "esp32-cam.zip",
       "label": null,
       "uploader": {
@@ -57,20 +58,21 @@
         "events_url": "https://api.github.com/users/johnyHV/events{/privacy}",
         "received_events_url": "https://api.github.com/users/johnyHV/received_events",
         "type": "User",
+        "user_view_type": "public",
         "site_admin": false
       },
       "content_type": "application/x-zip-compressed",
       "state": "uploaded",
-      "size": 980017,
-      "download_count": 298,
-      "created_at": "2024-08-05T19:22:53Z",
-      "updated_at": "2024-08-05T19:22:54Z",
-      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/esp32-cam.zip"
+      "size": 982889,
+      "download_count": 98,
+      "created_at": "2024-11-26T21:33:24Z",
+      "updated_at": "2024-11-26T21:33:27Z",
+      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/esp32-cam.zip"
     },
     {
-      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/184053181",
-      "id": 184053181,
-      "node_id": "RA_kwDOLr1ZSM4K-G29",
+      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/209263784",
+      "id": 209263784,
+      "node_id": "RA_kwDOLr1ZSM4MeRyo",
       "name": "esp32-s3-cam.bin",
       "label": null,
       "uploader": {
@@ -91,20 +93,21 @@
         "events_url": "https://api.github.com/users/johnyHV/events{/privacy}",
         "received_events_url": "https://api.github.com/users/johnyHV/received_events",
         "type": "User",
+        "user_view_type": "public",
         "site_admin": false
       },
       "content_type": "application/octet-stream",
       "state": "uploaded",
-      "size": 1545632,
-      "download_count": 49,
-      "created_at": "2024-08-05T19:22:45Z",
-      "updated_at": "2024-08-05T19:22:45Z",
-      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/esp32-s3-cam.bin"
+      "size": 1553200,
+      "download_count": 21,
+      "created_at": "2024-11-26T21:33:27Z",
+      "updated_at": "2024-11-26T21:33:28Z",
+      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/esp32-s3-cam.bin"
     },
     {
-      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/184053198",
-      "id": 184053198,
-      "node_id": "RA_kwDOLr1ZSM4K-G3O",
+      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/209263791",
+      "id": 209263791,
+      "node_id": "RA_kwDOLr1ZSM4MeRyv",
       "name": "esp32-s3-cam.zip",
       "label": null,
       "uploader": {
@@ -125,20 +128,21 @@
         "events_url": "https://api.github.com/users/johnyHV/events{/privacy}",
         "received_events_url": "https://api.github.com/users/johnyHV/received_events",
         "type": "User",
+        "user_view_type": "public",
         "site_admin": false
       },
       "content_type": "application/x-zip-compressed",
       "state": "uploaded",
-      "size": 951605,
-      "download_count": 62,
-      "created_at": "2024-08-05T19:22:57Z",
-      "updated_at": "2024-08-05T19:22:57Z",
-      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/esp32-s3-cam.zip"
+      "size": 954900,
+      "download_count": 32,
+      "created_at": "2024-11-26T21:33:28Z",
+      "updated_at": "2024-11-26T21:33:28Z",
+      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/esp32-s3-cam.zip"
     },
     {
-      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/184053202",
-      "id": 184053202,
-      "node_id": "RA_kwDOLr1ZSM4K-G3S",
+      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/209263796",
+      "id": 209263796,
+      "node_id": "RA_kwDOLr1ZSM4MeRy0",
       "name": "esp32-s3-eye-22.zip",
       "label": null,
       "uploader": {
@@ -159,20 +163,21 @@
         "events_url": "https://api.github.com/users/johnyHV/events{/privacy}",
         "received_events_url": "https://api.github.com/users/johnyHV/received_events",
         "type": "User",
+        "user_view_type": "public",
         "site_admin": false
       },
       "content_type": "application/x-zip-compressed",
       "state": "uploaded",
-      "size": 949129,
-      "download_count": 53,
-      "created_at": "2024-08-05T19:23:01Z",
-      "updated_at": "2024-08-05T19:23:02Z",
-      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/esp32-s3-eye-22.zip"
+      "size": 952608,
+      "download_count": 16,
+      "created_at": "2024-11-26T21:33:28Z",
+      "updated_at": "2024-11-26T21:33:29Z",
+      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/esp32-s3-eye-22.zip"
     },
     {
-      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/184053206",
-      "id": 184053206,
-      "node_id": "RA_kwDOLr1ZSM4K-G3W",
+      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/209263798",
+      "id": 209263798,
+      "node_id": "RA_kwDOLr1ZSM4MeRy2",
       "name": "esp32-wrover-dev.zip",
       "label": null,
       "uploader": {
@@ -193,20 +198,21 @@
         "events_url": "https://api.github.com/users/johnyHV/events{/privacy}",
         "received_events_url": "https://api.github.com/users/johnyHV/received_events",
         "type": "User",
+        "user_view_type": "public",
         "site_admin": false
       },
       "content_type": "application/x-zip-compressed",
       "state": "uploaded",
-      "size": 943470,
-      "download_count": 20,
-      "created_at": "2024-08-05T19:23:06Z",
-      "updated_at": "2024-08-05T19:23:06Z",
-      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/esp32-wrover-dev.zip"
+      "size": 946290,
+      "download_count": 9,
+      "created_at": "2024-11-26T21:33:29Z",
+      "updated_at": "2024-11-26T21:33:29Z",
+      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/esp32-wrover-dev.zip"
     },
     {
-      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/184053175",
-      "id": 184053175,
-      "node_id": "RA_kwDOLr1ZSM4K-G23",
+      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/209263778",
+      "id": 209263778,
+      "node_id": "RA_kwDOLr1ZSM4MeRyi",
       "name": "ESP32S3_EYE22.bin",
       "label": null,
       "uploader": {
@@ -227,20 +233,21 @@
         "events_url": "https://api.github.com/users/johnyHV/events{/privacy}",
         "received_events_url": "https://api.github.com/users/johnyHV/received_events",
         "type": "User",
+        "user_view_type": "public",
         "site_admin": false
       },
       "content_type": "application/octet-stream",
       "state": "uploaded",
-      "size": 1542080,
-      "download_count": 35,
-      "created_at": "2024-08-05T19:22:42Z",
-      "updated_at": "2024-08-05T19:22:42Z",
-      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/ESP32S3_EYE22.bin"
+      "size": 1549808,
+      "download_count": 24,
+      "created_at": "2024-11-26T21:33:27Z",
+      "updated_at": "2024-11-26T21:33:27Z",
+      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/ESP32S3_EYE22.bin"
     },
     {
-      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/184053165",
-      "id": 184053165,
-      "node_id": "RA_kwDOLr1ZSM4K-G2t",
+      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/209263814",
+      "id": 209263814,
+      "node_id": "RA_kwDOLr1ZSM4MeRzG",
       "name": "ESP32_PrusaConnectCam.ino.bin",
       "label": null,
       "uploader": {
@@ -261,20 +268,21 @@
         "events_url": "https://api.github.com/users/johnyHV/events{/privacy}",
         "received_events_url": "https://api.github.com/users/johnyHV/received_events",
         "type": "User",
+        "user_view_type": "public",
         "site_admin": false
       },
       "content_type": "application/octet-stream",
       "state": "uploaded",
-      "size": 1601152,
-      "download_count": 412,
-      "created_at": "2024-08-05T19:22:36Z",
-      "updated_at": "2024-08-05T19:22:37Z",
-      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/ESP32_PrusaConnectCam.ino.bin"
+      "size": 1607712,
+      "download_count": 174,
+      "created_at": "2024-11-26T21:33:30Z",
+      "updated_at": "2024-11-26T21:33:31Z",
+      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/ESP32_PrusaConnectCam.ino.bin"
     },
     {
-      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/184053170",
-      "id": 184053170,
-      "node_id": "RA_kwDOLr1ZSM4K-G2y",
+      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/209263815",
+      "id": 209263815,
+      "node_id": "RA_kwDOLr1ZSM4MeRzH",
       "name": "ESP32_WROVERDEV.bin",
       "label": null,
       "uploader": {
@@ -295,20 +303,21 @@
         "events_url": "https://api.github.com/users/johnyHV/events{/privacy}",
         "received_events_url": "https://api.github.com/users/johnyHV/received_events",
         "type": "User",
+        "user_view_type": "public",
         "site_admin": false
       },
       "content_type": "application/octet-stream",
       "state": "uploaded",
-      "size": 1547744,
-      "download_count": 31,
-      "created_at": "2024-08-05T19:22:38Z",
-      "updated_at": "2024-08-05T19:22:39Z",
-      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/ESP32_WROVERDEV.bin"
+      "size": 1554432,
+      "download_count": 12,
+      "created_at": "2024-11-26T21:33:31Z",
+      "updated_at": "2024-11-26T21:33:31Z",
+      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/ESP32_WROVERDEV.bin"
     },
     {
-      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/184053210",
-      "id": 184053210,
-      "node_id": "RA_kwDOLr1ZSM4K-G3a",
+      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/209263812",
+      "id": 209263812,
+      "node_id": "RA_kwDOLr1ZSM4MeRzE",
       "name": "xiao-esp32-s3.zip",
       "label": null,
       "uploader": {
@@ -329,20 +338,21 @@
         "events_url": "https://api.github.com/users/johnyHV/events{/privacy}",
         "received_events_url": "https://api.github.com/users/johnyHV/received_events",
         "type": "User",
+        "user_view_type": "public",
         "site_admin": false
       },
       "content_type": "application/x-zip-compressed",
       "state": "uploaded",
-      "size": 937586,
-      "download_count": 28,
-      "created_at": "2024-08-05T19:23:09Z",
-      "updated_at": "2024-08-05T19:23:10Z",
-      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/xiao-esp32-s3.zip"
+      "size": 940999,
+      "download_count": 8,
+      "created_at": "2024-11-26T21:33:30Z",
+      "updated_at": "2024-11-26T21:33:30Z",
+      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/xiao-esp32-s3.zip"
     },
     {
-      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/184053186",
-      "id": 184053186,
-      "node_id": "RA_kwDOLr1ZSM4K-G3C",
+      "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/assets/209263807",
+      "id": 209263807,
+      "node_id": "RA_kwDOLr1ZSM4MeRy_",
       "name": "XIAO_ESP32S3.bin",
       "label": null,
       "uploader": {
@@ -363,18 +373,31 @@
         "events_url": "https://api.github.com/users/johnyHV/events{/privacy}",
         "received_events_url": "https://api.github.com/users/johnyHV/received_events",
         "type": "User",
+        "user_view_type": "public",
         "site_admin": false
       },
       "content_type": "application/octet-stream",
       "state": "uploaded",
-      "size": 1522544,
-      "download_count": 32,
-      "created_at": "2024-08-05T19:22:49Z",
-      "updated_at": "2024-08-05T19:22:49Z",
-      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.0/XIAO_ESP32S3.bin"
+      "size": 1530224,
+      "download_count": 12,
+      "created_at": "2024-11-26T21:33:29Z",
+      "updated_at": "2024-11-26T21:33:30Z",
+      "browser_download_url": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/releases/download/v1.1.1/XIAO_ESP32S3.bin"
     }
   ],
-  "tarball_url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/tarball/v1.1.0",
-  "zipball_url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/zipball/v1.1.0",
-  "body": "\r\n# Summary\r\n---\r\n- Added  support for multiple boards\r\n- Update ESPAsyncWebServer lib\r\n- Update arduino-esp32 lib (ESP IDF)\r\n- Update ArduinoJson lib\r\n- Added WEB api\r\n- Added MCU temperature display \r\n- Added support for the external temperature sensor DHT22 or DHT11\r\n- Added css version\r\n- Updated documentation\r\n- Bug fixes and code optimalisation\r\n\r\n## Added  support for multiple boards\r\n---\r\n\r\nIn this version, support for several additional boards based on the ESP32/ESP32-S3 processor with a camera has been added. Currently, the **Ai-Thinker ESP32-cam**, **ESP32-S3-EYE 2.2**, **Freenove ESP32-Wrover cam**, **XIAO ESP32-S3 Sense**, **ESP32-S3-CAM** boards is supported, and support for more boards will be added in the future. You can find the fuul list of supported boards in the README.\r\n\r\n![image](https://github.com/user-attachments/assets/875d874c-da54-4e58-8d15-3c81ab3006ba)\r\n\r\n## Update ESPAsyncWebServer lib\r\n--- \r\n\r\nUpdate of the ESPAsyncWebServer lib from version 2.10.1 to 3.0.6. The library update improved the stability and speed of the software.\r\n\r\n## Update arduino-esp32 lib (ESP IDF)\r\n---\r\n\r\nUpdate of the arduino-esp32 lib from version 2.0.16 to 3.0.4 (from ESP IDF 4.4.7 to ESP IDF 5.1.4+). The arduino-esp32 library is the ESP-IDF library, adapted for the Arduino platform. The library update improved the stability and speed of the software. \r\n\r\n## Update ArduinoJson lib\r\n---\r\n\r\nUpdate of the ArduinoJson lib from 7.0.4 to 7.1.0\r\n\r\n## Added WEB api\r\n---\r\n\r\nAdded WEB API for additional camera settings, such as turning on the flash or LED light. The WEB API can be used to integrate the camera with Home Assistant. All commands for the WEB API can be found in the documentation.\r\n\r\n![web_api](https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/assets/4459753/3a5a6d69-9492-494f-9bd2-05529510ec95)\r\n\r\n## Added MCU temperature display\r\n---\r\n\r\nAdded processor temperature display on the system tab.\r\n\r\n![mcu_temp](https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/assets/4459753/55fc4b8c-303b-46b9-85d0-b8ff298d3b94)\r\n\r\n## Added support for the external temperature sensor DHT22 or DHT11\r\n---\r\n\r\nAdded the option to connect an external temperature sensor (DHT22 or DHT11) for measuring temperature and humidity in the box. Each board's documentation includes instructions on how to connect the sensor to specific pins.\r\n\r\n![image](https://github.com/user-attachments/assets/3a7b9c03-c86a-4d01-8bfd-dc449c1a8191)\r\n\r\n## Added css version\r\n---\r\n\r\nA version of the CSS file has been added, so it will no longer be necessary to clear the cache after every change to the webpage.\r\n\r\n## Updated documentation\r\n---\r\n\r\nEach board has its own documentation, including information about it and instructions on how to upload firmware to the board. You can navigate to the documentation for a specific board from the table of supported boards.\r\n\r\n##  Bug fixes and code optimalisation\r\n---\r\n\r\nSeveral other minor bugs have been fixed.\r\n"
+  "tarball_url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/tarball/v1.1.1",
+  "zipball_url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/zipball/v1.1.1",
+  "body": "# Summary\r\n---\r\n- Camera FW version in the Prusa Connect\r\n- Update  arduino-ESP32 lib (ESP IDF)\r\n- Update ESPAsyncWebServer lib\r\n- Update AsyncTCP lib\r\n- Update ArduinoJson lib\r\n- Update DHTnew lib\r\n- Update jquery lib\r\n- Updated documentation\r\n- Bug fixes and code optimalisation\r\n\r\nThe current firmware version includes updated libraries, which make the camera more stable. Additionally, it adds the functionality to send the firmware version to Prusa Connect.\r\n\r\n## Camera FW version in the Prusa Connect\r\n---\r\nThis firmware version sends the firmware version to Prusa Connect. Thanks to this, it is possible to see in Prusa Connect which firmware version your camera is using.\r\n\r\n![image](https://github.com/user-attachments/assets/05018496-7779-4a08-b289-b7ef3eb20e1c)\r\n\r\n\r\n## Update arduino-ESP32 lib\r\n--- \r\n\r\nUpdate of the arduino-ESP32 lib from version 3.0.2 to 3.0.7.\r\n\r\n## Update ESPAsyncWebServer lib\r\n--- \r\n\r\nUpdate of the ESPAsyncWebServer lib from version  3.0.6 to 3.3.22. \r\n\r\n## Update AsyncTCP lib\r\n--- \r\n\r\nUpdate of the AsyncTCP lib from version  3.1.4 to 3.2.14.\r\n\r\n## Update ArduinoJson lib\r\n--- \r\n\r\nUpdate of the ArduinoJson lib from version  7.1.0 to 7.2.1.\r\n\r\n## Update DHTnew lib\r\n--- \r\n\r\nUpdate of the DHTnew lib from version  0.4.20 to 0.4.21.\r\n\r\n## Update jquery lib\r\n---\r\n\r\nUpdate of the jquery lib from version 3.7.0 to 3.7.1",
+  "reactions": {
+    "url": "https://api.github.com/repos/prusa3d/Prusa-Firmware-ESP32-Cam/releases/187338716/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 1,
+    "rocket": 0,
+    "eyes": 0
+  }
 }
